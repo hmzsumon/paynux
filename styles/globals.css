@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	background: #ffffff;
+}
+
+body {
+	padding-top: 73px;
+}

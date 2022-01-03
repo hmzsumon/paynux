@@ -2,8 +2,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaUser, FaQuestion } from 'react-icons/fa';
-import { AiOutlineMenu, AiOutlineMenuFold } from 'react-icons/ai';
-import { MdOutlineMenuOpen, MdClose } from 'react-icons/md';
+import { AiOutlineMenu } from 'react-icons/ai';
+import {
+	MdOutlineMenuOpen,
+	MdClose,
+	MdAppRegistration,
+	MdOutlineLogin,
+} from 'react-icons/md';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = React.useState(false);
@@ -61,21 +66,36 @@ const Navbar = () => {
 			</nav>
 			{/* Mobile Menu */}
 			<div
-				className={`bg-gray-200  inset-y-0 md:hidden transition duration-300 ease-in-out absolute top-0 w-7/12 ${
+				className={`bg-green-600 inset-y-0 md:hidden transition duration-300 ease-in-out absolute top-0 w-9/12 ${
 					isOpen ? 'translate-x-0' : '-translate-x-full'
 				}`}
 			>
-				<div className='flex items-center justify-around border-gray-400 border-b-2 px-4 py-2'>
+				<div className='flex items-center justify-between border-gray-400 border-b-2 px-4 py-2'>
 					<Link href='/'>
 						<a className='inline-flex items-center p-2 mr-4 '>
-							<img src='./pynux_logo.png' alt='logo' className=' w-40 ' />
+							<img src='./pynux_logo.png' alt='logo' className='  w-36' />
 						</a>
 					</Link>
 
 					<MdClose
-						className='text-2xl text-my_color2 font-bold ring-2 rounded-full p-1 cursor-pointer '
+						className='text-3xl text-red-500 font-bold cursor-pointer hover:scale-125 transition duration-300 ease-in-out'
 						onClick={() => setIsOpen(!isOpen)}
 					/>
+				</div>
+
+				<div className='pl-2 '>
+					<div className='flex space-x-2 items-center'>
+						<MdOutlineLogin />
+						<Link href='/'>
+							<a className='text-xl font-medium text-my_color2'>Login</a>
+						</Link>
+					</div>
+					<div className='flex space-x-2 items-center'>
+						<MdAppRegistration />
+						<Link href='/'>
+							<a className='text-xl font-medium text-my_color2'>Register</a>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</>

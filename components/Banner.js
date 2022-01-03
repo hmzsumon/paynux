@@ -17,7 +17,7 @@ const Banner = () => {
 						Instant, secure money transfers to and from your trading platform
 					</h1>
 					<button className='bg-gradient-to-r  from-my_color1 to-my_color2 py-1 px-8 text-white text-xl font-medium rounded'>
-						Register
+						Get Started
 					</button>
 				</div>
 				<div className=' h-screen col-span-1'></div>

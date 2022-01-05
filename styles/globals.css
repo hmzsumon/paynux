@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Heeder h1 */
+.h1 {
+	@apply text-3xl font-semibold text-gray-700 md:text-white;
+}
+
 html {
 	background: #ffffff;
 }

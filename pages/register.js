@@ -71,7 +71,7 @@ const Register = () => {
 								<input
 									className='w-full px-2 py-1 mr-3 leading-tight text-gray-700 bg-transparent border-none appearance-none focus:outline-none'
 									type='text'
-									placeholder='Last Name'
+									placeholder=' Currency'
 									aria-label='Full name'
 								/>
 							</div>

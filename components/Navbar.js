@@ -70,7 +70,7 @@ const Navbar = () => {
 			</nav>
 			{/* Mobile Menu */}
 			<div
-				className={`bg-gradient-to-r from-my_color1 to-my_color2 inset-y-0 md:hidden transition duration-300 ease-in-out absolute top-0 w-9/12 ${
+				className={`z-50 bg-gradient-to-r from-my_color1 to-my_color2 inset-y-0 md:hidden transition duration-300 ease-in-out absolute top-0 w-9/12 ${
 					isOpen ? 'translate-x-0' : '-translate-x-full'
 				}`}
 			>
@@ -91,13 +91,23 @@ const Navbar = () => {
 					<div className='flex items-center space-x-2'>
 						<MdOutlineLogin />
 						<Link href='/'>
-							<a className='text-xl font-medium text-white'>Login</a>
+							<a
+								className='text-xl font-medium text-white'
+								onClick={() => setIsOpen(!isOpen)}
+							>
+								Login
+							</a>
 						</Link>
 					</div>
 					<div className='flex items-center space-x-2'>
 						<MdAppRegistration />
 						<Link href='/register'>
-							<a className='text-xl font-medium text-white'>Register</a>
+							<a
+								className='text-xl font-medium text-white'
+								onClick={() => setIsOpen(!isOpen)}
+							>
+								Register
+							</a>
 						</Link>
 					</div>
 				</div>

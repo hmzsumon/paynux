@@ -12,7 +12,10 @@ const Layout = ({ children }) => {
 					content='Paynux is a platform for businesses to manage their finances.'
 				/>
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
-				<meta property='og:image' content='./pynux_logo.png' />
+				<meta
+					property='og:image'
+					content='https://psynux.vercel.app/pynux_logo.png'
+				/>
 			</Head>
 			<Navbar />
 			{children}

@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 				<meta
 					property='og:image'
-					content='https://psynux.vercel.app/pynux_logo.png'
+					content='https://i.ibb.co/bP1ymdx/pynux-logo.png'
 				/>
 			</Head>
 			<Navbar />
